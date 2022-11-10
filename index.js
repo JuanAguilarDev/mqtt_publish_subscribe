@@ -40,7 +40,7 @@ async function execute_session(connection, argv) {
 
         const net = require("net");
         //configuracion del puerto
-        const port = 9001;
+        const port = 3000;
         //crear cliente
         const client1 = new net.Socket();
         //Conexion al puerto y host especificado
