@@ -38,13 +38,15 @@ async function execute_session(connection, argv) {
         kilowatt = message.d[6].value;
         dataPool = `19520|SD|DL:0.0.0:AT.0.0.0|${date}|0|0|0|${voltaje1}|${voltaje2}|${voltaje3}|${amperaje1}|${amperaje2}|${amperaje3}|0|0|0|0|0|0|0|0|0|0|0|0|0|0|${kilowatt}|0|0`;
 
+        //HOST
+        const host = "18.234.171.64":
         const net = require("net");
         //configuracion del puerto
         const port = 3000;
         //crear cliente
         const client1 = new net.Socket();
         //Conexion al puerto y host especificado
-        client1.connect(port, function () {
+        client1.connect(port, host,function () {
           //Log conexion establecido
           console.log(`Client 1 :Connected to server on port ${port}`);
           client1.write(dataPool);
