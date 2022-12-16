@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "NodeJS IoT SDK v2 Pub Sub JS Sample",
   "homepage": "https://github.com/aws/aws-iot-device-sdk-js-v2",
+  "scripts": {
+    "mqtt": "node index.js --endpoint ec2-54-166-221-55.compute-1.amazonaws.com --ca_file ./certs/AmazonRootCA1.pem --cert ./certs/b1e20a6b846cc5f0721b50697aefaf06b9d9499fe10d8bfa034bc5e594d5caff-certificate.pem.crt --key ./certs/b1e20a6b846cc5f0721b50697aefaf06b9d9499fe10d8bfa034bc5e594d5caff-private.pem.key"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aws/aws-iot-device-sdk-js-v2.git"
